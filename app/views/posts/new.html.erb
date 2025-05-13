@@ -2,5 +2,17 @@
 
 <form action="/posts" method="post">
   <%# add form fields %>
+  <p>
+  <label for="">Author</label>
+  <input type="text" name="author" id="author_input" value="<%=params["author"]%>">
+  </p>
+  <p>
+  <label for="">Image</label>
+  <input type="text" name="image" id="image_url" value="<%=params["image"]%>">
+  </p>
+  <p>
+  <label for="">Body</label>
+  <input type="text" name="body" id="body_input" value="<%=params["body"]%>">
+  
   <button>Submit</button>
 </form>
